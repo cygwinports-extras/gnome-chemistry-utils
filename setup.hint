@@ -1,0 +1,5 @@
+category: Gnome Science
+requires: cygwin libgcu GConf2 glib2 gnome-vfs2 gtk2-x11 gtkglext-x11 libglade2 libgnomeprint22 libgnomeprintui22 libgsf114 libintl8 libxml2
+sdesc: "GNOME Chemistry Utilities"
+ldesc: "The Gnome Chemistry Utils provide some utilities and a library
+containing Gtk widgets and some C++ classes related to chemistry."

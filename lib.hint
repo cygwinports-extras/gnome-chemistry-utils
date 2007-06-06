@@ -1,0 +1,6 @@
+category: Gnome Science
+requires: cygwin GConf2 bodr chemistry-mime-data glib2 gnome-vfs2 gtk2-x11 gtkglext-x11 libGL1 libGLU1 libglade2 libgnomeprint22 libgoffice04 libintl8 libopenbabel2 libxml2 pango
+external-source: gnome-chemistry-utils
+sdesc: "GNOME Chemistry Utils library (runtime)"
+ldesc: "The Gnome Chemistry Utils provide some utilities and a library
+containing Gtk widgets and some C++ classes related to chemistry."
