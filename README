@@ -16,14 +16,14 @@ Runtime requirements:
   libGL1-6.5.3-1
   libGLU1-6.5.3-1
   libglade2-2.6.1-1
-  libgnomeprint22-2.18.0-1
+  libgnomeprint22-2.18.1-1
   libgnomeprintui22-2.18.0-1
-  libgoffice04-0.4.0-1
-  libgsf114-1.14.5-1
+  libgoffice04-0.4.3-1
+  libgsf114-1.14.7-1
   libintl8-0.15-1
   libopenbabel2-2.1.1-1
-  libxml2-2.6.28-2
-  pango-1.16.4-1
+  libxml2-2.6.29-1
+  pango-1.16.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -51,15 +51,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-chemistry-utils-0.8.2-X-src.tar.bz2
+  unpack gnome-chemistry-utils-0.8.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-chemistry-utils-0.8.2-X.cygport all
+  cygport ./gnome-chemistry-utils-0.8.3-X.cygport all
 
 This will create:
-  /usr/src/gnome-chemistry-utils-0.8.2-X-src.tar.bz2
-  /usr/src/gnome-chemistry-utils-0.8.2-X.tar.bz2
+  /usr/src/gnome-chemistry-utils-0.8.3-X-src.tar.bz2
+  /usr/src/gnome-chemistry-utils-0.8.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -76,15 +76,15 @@ Files included in the binary package:
   /usr/share/applications/gchemcalc.desktop
   /usr/share/applications/gchemtable.desktop
   /usr/share/applications/gcrystal.desktop
-  /usr/share/doc/Cygwin/gnome-chemistry-utils-0.8.2.README
-  /usr/share/doc/gnome-chemistry-utils-0.8.2/AUTHORS
-  /usr/share/doc/gnome-chemistry-utils-0.8.2/COPYING
-  /usr/share/doc/gnome-chemistry-utils-0.8.2/COPYING-DOCS
-  /usr/share/doc/gnome-chemistry-utils-0.8.2/ChangeLog
-  /usr/share/doc/gnome-chemistry-utils-0.8.2/INSTALL
-  /usr/share/doc/gnome-chemistry-utils-0.8.2/NEWS
-  /usr/share/doc/gnome-chemistry-utils-0.8.2/README
-  /usr/share/doc/gnome-chemistry-utils-0.8.2/TODO
+  /usr/share/doc/Cygwin/gnome-chemistry-utils-0.8.3.README
+  /usr/share/doc/gnome-chemistry-utils-0.8.3/AUTHORS
+  /usr/share/doc/gnome-chemistry-utils-0.8.3/COPYING
+  /usr/share/doc/gnome-chemistry-utils-0.8.3/COPYING-DOCS
+  /usr/share/doc/gnome-chemistry-utils-0.8.3/ChangeLog
+  /usr/share/doc/gnome-chemistry-utils-0.8.3/INSTALL
+  /usr/share/doc/gnome-chemistry-utils-0.8.3/NEWS
+  /usr/share/doc/gnome-chemistry-utils-0.8.3/README
+  /usr/share/doc/gnome-chemistry-utils-0.8.3/TODO
   /usr/share/gnome-chemistry-utils/pixmaps/gcrystal_logo.png
   /usr/share/gnome/help/gchem3d-viewer/C/figures/main-window.png
   /usr/share/gnome/help/gchem3d-viewer/C/gchem3d-viewer.xml
@@ -405,6 +405,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.8.3-1 -----
+Version bump.
 
 ----- version 0.8.2-1 -----
 Version bump.
