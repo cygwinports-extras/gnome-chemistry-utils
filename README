@@ -5,38 +5,38 @@ containing Gtk widgets and some C++ classes related to chemistry.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  GConf2-2.18.0.1-1
+  GConf2-2.20.1-1
   bodr-6-1
   chemistry-mime-data-0.1.94-1
-  gdk-pixbuf2-2.10.14-1
-  glib2-2.12.13-1
-  gnome-vfs2-2.18.1-1
-  gtk2-x11-2.10.14-1
+  gdk-pixbuf2-2.12.2-1
+  glib2-2.14.4-1
+  gnome-vfs2-2.20.1-1
+  gtk2-x11-2.12.2-1
   gtkglext-x11-1.2.0-1
-  libGL1-7.0.1-1
-  libGLU1-7.0.1-1
-  libglade2-2.6.1-1
-  libgnomeprint22-2.18.1-1
-  libgnomeprintui22-2.18.0-1
+  libGL1-7.0.2-1
+  libGLU1-7.0.2-1
+  libglade2-2.6.2-1
+  libgnomeprint22-2.18.2-1
+  libgnomeprintui22-2.18.1-1
   libgoffice04-0.4.3-1
   libgsf114-1.14.7-1
   libintl8-0.15-1
   libopenbabel2-2.1.1-1
   libxml2-2.6.30-1
-  pango-1.16.5-1
+  pango-1.18.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
+  automake1.10-1.10-1
   binutils-20060817-1
   cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  gnome-doc-utils-0.10.3-1
-  intltool-0.35.5-1
+  gnome-doc-utils-0.12.0-1
+  intltool-0.36.3-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
@@ -51,15 +51,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-chemistry-utils-0.8.4-X-src.tar.bz2
+  unpack gnome-chemistry-utils-0.8.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-chemistry-utils-0.8.4-X.cygport all
+  cygport ./gnome-chemistry-utils-0.8.5-X.cygport all
 
 This will create:
-  /usr/src/gnome-chemistry-utils-0.8.4-X-src.tar.bz2
-  /usr/src/gnome-chemistry-utils-0.8.4-X.tar.bz2
+  /usr/src/gnome-chemistry-utils-0.8.5-X-src.tar.bz2
+  /usr/src/gnome-chemistry-utils-0.8.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -76,15 +76,15 @@ Files included in the binary package:
   /usr/share/applications/gchemcalc.desktop
   /usr/share/applications/gchemtable.desktop
   /usr/share/applications/gcrystal.desktop
-  /usr/share/doc/Cygwin/gnome-chemistry-utils-0.8.4.README
-  /usr/share/doc/gnome-chemistry-utils-0.8.4/AUTHORS
-  /usr/share/doc/gnome-chemistry-utils-0.8.4/COPYING
-  /usr/share/doc/gnome-chemistry-utils-0.8.4/COPYING-DOCS
-  /usr/share/doc/gnome-chemistry-utils-0.8.4/ChangeLog
-  /usr/share/doc/gnome-chemistry-utils-0.8.4/INSTALL
-  /usr/share/doc/gnome-chemistry-utils-0.8.4/NEWS
-  /usr/share/doc/gnome-chemistry-utils-0.8.4/README
-  /usr/share/doc/gnome-chemistry-utils-0.8.4/TODO
+  /usr/share/doc/Cygwin/gnome-chemistry-utils-0.8.5.README
+  /usr/share/doc/gnome-chemistry-utils-0.8.5/AUTHORS
+  /usr/share/doc/gnome-chemistry-utils-0.8.5/COPYING
+  /usr/share/doc/gnome-chemistry-utils-0.8.5/COPYING-DOCS
+  /usr/share/doc/gnome-chemistry-utils-0.8.5/ChangeLog
+  /usr/share/doc/gnome-chemistry-utils-0.8.5/INSTALL
+  /usr/share/doc/gnome-chemistry-utils-0.8.5/NEWS
+  /usr/share/doc/gnome-chemistry-utils-0.8.5/README
+  /usr/share/doc/gnome-chemistry-utils-0.8.5/TODO
   /usr/share/gnome-chemistry-utils/pixmaps/gcrystal_logo.png
   /usr/share/gnome/help/gchem3d-viewer/C/figures/main-window.png
   /usr/share/gnome/help/gchem3d-viewer/C/gchem3d-viewer.xml
@@ -405,6 +405,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.8.5-1 -----
+Version bump.
 
 ----- version 0.8.4-1 -----
 Version bump.
