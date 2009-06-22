@@ -4,41 +4,44 @@ The Gnome Chemistry Utils provide some utilities and a library
 containing Gtk widgets and some C++ classes related to chemistry.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  bodr-6-1
-  chemistry-mime-data-0.1.94-1
-  libart_lgpl_2_2-2.3.20-2
-  libcairo2-1.8.6-1
-  libgconf2_4-2.24.0-1
-  libgdk_pixbuf2.0_0-2.14.7-1
+  cygwin-1.7.0-50
+  bodr-8-10
+  chemistry-mime-data-0.1.94-10
+  libart_lgpl_2_2-2.3.20-10
+  libcairo2-1.8.6-10
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.2-1
+  libgdk_pixbuf2.0_0-2.16.2-1
   libGL1-7.2-2
-  libglade2.0_0-2.6.3-2
-  libglib2.0_0-2.18.4-1
-  libgnomecanvas2_0-2.20.1.1-2
-  libgnomevfs2_0-2.24.0-1
-  libgoffice0.6_6-0.6.5-2
-  libgsf1_114-1.14.10-1
-  libgtk2.0_0-2.14.7-1
-  libgtkglext1.0_0-1.2.0-2
-  libintl8-0.17-2
-  libopenbabel2-2.1.1-1
-  libpango1.0_0-1.22.4-1
-  libxml2-2.7.2-1
+  libglade2.0_0-2.6.4-1
+  libglib2.0_0-2.20.3-1
+  libgnomecanvas2_0-2.26.0-1
+  libgnomevfs2_0-2.26.0-1
+  libgoffice0.6_6-0.6.6-10
+  libgsf1_114-1.14.14-1
+  libgtk2.0_0-2.16.2-1
+  libgtkglext1.0_0-1.2.0-10
+  libintl8-0.17-11
+  libopenbabel3-2.2.1-1
+  libpango1.0_0-1.24.2-1
+  libstdc++6-4.3.2-2
+  libxml2-2.7.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.21-0
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  gnome-doc-utils-0.14.0-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  cygport-0.9.7-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  gnome-common-2.26.0-2
+  gnome-doc-utils-0.16.1-2
+  intltool-0.40.6-1
+  libtool-2.2.7a-13
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -50,15 +53,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-chemistry-utils-0.10.3-X-src.tar.bz2
+  unpack gnome-chemistry-utils-0.10.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-chemistry-utils-0.10.3-X.cygport all
+  cygport ./gnome-chemistry-utils-0.10.4-X.cygport all
 
 This will create:
-  /usr/src/gnome-chemistry-utils-0.10.3-X-src.tar.bz2
-  /usr/src/gnome-chemistry-utils-0.10.3-X.tar.bz2
+  /usr/src/gnome-chemistry-utils-0.10.4-X-src.tar.bz2
+  /usr/src/gnome-chemistry-utils-0.10.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -124,14 +127,13 @@ Files included in the binary package:
   /usr/share/applications/gchemtable-0.10.desktop
   /usr/share/applications/gcrystal-0.10.desktop
   /usr/share/applications/gspectrum-0.10.desktop
-  /usr/share/doc/gnome-chemistry-utils-0.10.3/AUTHORS
-  /usr/share/doc/gnome-chemistry-utils-0.10.3/COPYING
-  /usr/share/doc/gnome-chemistry-utils-0.10.3/COPYING-DOCS
-  /usr/share/doc/gnome-chemistry-utils-0.10.3/ChangeLog
-  /usr/share/doc/gnome-chemistry-utils-0.10.3/INSTALL
-  /usr/share/doc/gnome-chemistry-utils-0.10.3/NEWS
-  /usr/share/doc/gnome-chemistry-utils-0.10.3/README
-  /usr/share/doc/gnome-chemistry-utils-0.10.3/TODO
+  /usr/share/doc/gnome-chemistry-utils/AUTHORS
+  /usr/share/doc/gnome-chemistry-utils/COPYING
+  /usr/share/doc/gnome-chemistry-utils/COPYING-DOCS
+  /usr/share/doc/gnome-chemistry-utils/INSTALL
+  /usr/share/doc/gnome-chemistry-utils/NEWS
+  /usr/share/doc/gnome-chemistry-utils/README
+  /usr/share/doc/gnome-chemistry-utils/TODO
   /usr/share/gchemutils/0.10/elecprops.xml
   /usr/share/gchemutils/0.10/elements.xml
   /usr/share/gchemutils/0.10/glade/crystal/atoms.glade
@@ -379,32 +381,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.10.3-1 -----
-Version bump.
-
------ version 0.8.7-1 -----
-Version bump.
-
------ version 0.8.6-1 -----
-Version bump.
-
------ version 0.8.5-1 -----
-Version bump.
-
------ version 0.8.4-1 -----
-Version bump.
-
------ version 0.8.3-1 -----
-Version bump.
-
------ version 0.8.2-1 -----
-Version bump.
-
------ version 0.8.1-1 -----
-Version bump.
-
------ version 0.8.0-1 -----
-Initial release for Cygwin.
+----- version 0.10.4-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
