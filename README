@@ -4,42 +4,42 @@ The Gnome Chemistry Utils provide some utilities and a library
 containing Gtk widgets and some C++ classes related to chemistry.
 
 Runtime requirements:
-  cygwin-1.7.0-50
+  cygwin-1.7.0-61
   bodr-8-10
   chemistry-mime-data-0.1.94-10
   libart_lgpl_2_2-2.3.20-10
-  libcairo2-1.8.6-10
+  libcairo2-1.8.8-1
   libgcc1-4.3.2-2
   libgconf2_4-2.26.2-1
-  libgdk_pixbuf2.0_0-2.16.2-1
-  libGL1-7.2-2
+  libgdk_pixbuf2.0_0-2.16.6-1
+  libGL1-7.4.4-1
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.20.3-1
+  libglib2.0_0-2.20.5-1
   libgnomecanvas2_0-2.26.0-1
   libgnomevfs2_0-2.26.0-1
   libgoffice0.6_6-0.6.6-10
-  libgsf1_114-1.14.14-1
-  libgtk2.0_0-2.16.2-1
+  libgsf1_114-1.14.15-1
+  libgtk2.0_0-2.16.6-1
   libgtkglext1.0_0-1.2.0-10
   libintl8-0.17-11
   libopenbabel3-2.2.1-1
-  libpango1.0_0-1.24.2-1
+  libpango1.0_0-1.24.5-1
   libstdc++6-4.3.2-2
-  libxml2-2.7.3-10
+  libxml2-2.7.3-11
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.21-0
-  binutils-20080624-2
-  cygport-0.9.7-1
-  gawk-3.1.6-2
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  gawk-3.1.7-1
   gcc4-core-4.3.2-2
   gcc4-g++-4.3.2-2
   gnome-common-2.26.0-2
   gnome-doc-utils-0.16.1-2
   intltool-0.40.6-1
-  libtool-2.2.7a-13
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -53,333 +53,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-chemistry-utils-0.10.4-X-src.tar.bz2
+  unpack gnome-chemistry-utils-0.10.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-chemistry-utils-0.10.4-X.cygport all
+  cygport ./gnome-chemistry-utils-0.10.8-X.cygport all
 
 This will create:
-  /usr/src/gnome-chemistry-utils-0.10.4-X-src.tar.bz2
-  /usr/src/gnome-chemistry-utils-0.10.4-X.tar.bz2
+  /usr/src/gnome-chemistry-utils-0.10.8-X-src.tar.bz2
+  /usr/src/gnome-chemistry-utils-0.10.8-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /etc/gconf/schemas/gchempaint-arrows.schemas
-  /etc/gconf/schemas/gchempaint.schemas
-  /etc/gconf/schemas/gchemutils.schemas
-  /etc/gconf/schemas/gcrystal.schemas
-  /etc/postinstall/gnome-chemistry-utils.sh
-  /etc/preremove/gnome-chemistry-utils.sh
-  /usr/bin/cyggchempaint-0.10-0.dll
-  /usr/bin/cyggcpcanvas-0.10-0.dll
-  /usr/bin/cyggcu-0.10-0.dll
-  /usr/bin/gchem3d
-  /usr/bin/gchem3d-0.10.exe
-  /usr/bin/gchemcalc
-  /usr/bin/gchemcalc-0.10.exe
-  /usr/bin/gchempaint
-  /usr/bin/gchempaint-0.10.exe
-  /usr/bin/gchemtable
-  /usr/bin/gchemtable-0.10.exe
-  /usr/bin/gcrystal
-  /usr/bin/gcrystal-0.10.exe
-  /usr/bin/gspectrum
-  /usr/bin/gspectrum-0.10.exe
-  /usr/lib/gchemutils/0.10/plugins/cdx/cdx.dll
-  /usr/lib/gchemutils/0.10/plugins/cdx/cdx.la
-  /usr/lib/gchemutils/0.10/plugins/cdx/plugin.xml
-  /usr/lib/gchemutils/0.10/plugins/cdxml/cdxml.dll
-  /usr/lib/gchemutils/0.10/plugins/cdxml/cdxml.la
-  /usr/lib/gchemutils/0.10/plugins/cdxml/plugin.xml
-  /usr/lib/gchemutils/0.10/plugins/paint/arrows.dll
-  /usr/lib/gchemutils/0.10/plugins/paint/arrows.la
-  /usr/lib/gchemutils/0.10/plugins/paint/atoms.dll
-  /usr/lib/gchemutils/0.10/plugins/paint/atoms.la
-  /usr/lib/gchemutils/0.10/plugins/paint/bonds.dll
-  /usr/lib/gchemutils/0.10/plugins/paint/bonds.la
-  /usr/lib/gchemutils/0.10/plugins/paint/cycles.dll
-  /usr/lib/gchemutils/0.10/plugins/paint/cycles.la
-  /usr/lib/gchemutils/0.10/plugins/paint/residues.dll
-  /usr/lib/gchemutils/0.10/plugins/paint/residues.la
-  /usr/lib/gchemutils/0.10/plugins/paint/selection.dll
-  /usr/lib/gchemutils/0.10/plugins/paint/selection.la
-  /usr/lib/gchemutils/0.10/plugins/paint/templates.dll
-  /usr/lib/gchemutils/0.10/plugins/paint/templates.la
-  /usr/lib/gchemutils/0.10/plugins/paint/text.dll
-  /usr/lib/gchemutils/0.10/plugins/paint/text.la
-  /usr/lib/gchemutils/0.10/plugins/paint/wikipedia.dll
-  /usr/lib/gchemutils/0.10/plugins/paint/wikipedia.la
-  /usr/lib/goffice/0.6.5/plugins/gchemutils/gchemutils.dll
-  /usr/lib/goffice/0.6.5/plugins/gchemutils/gchemutils.la
-  /usr/lib/goffice/0.6.5/plugins/gchemutils/plugin.xml
-  /usr/lib/libgchempaint-0.10.dll.a
-  /usr/lib/libgchempaint-0.10.la
-  /usr/lib/libgcpcanvas-0.10.dll.a
-  /usr/lib/libgcpcanvas-0.10.la
-  /usr/lib/libgcu-0.10.dll.a
-  /usr/lib/libgcu-0.10.la
-  /usr/share/applications/gchem3d-0.10.desktop
-  /usr/share/applications/gchemcalc-0.10.desktop
-  /usr/share/applications/gchempaint-0.10.desktop
-  /usr/share/applications/gchemtable-0.10.desktop
-  /usr/share/applications/gcrystal-0.10.desktop
-  /usr/share/applications/gspectrum-0.10.desktop
-  /usr/share/doc/gnome-chemistry-utils/AUTHORS
-  /usr/share/doc/gnome-chemistry-utils/COPYING
-  /usr/share/doc/gnome-chemistry-utils/COPYING-DOCS
-  /usr/share/doc/gnome-chemistry-utils/INSTALL
-  /usr/share/doc/gnome-chemistry-utils/NEWS
-  /usr/share/doc/gnome-chemistry-utils/README
-  /usr/share/doc/gnome-chemistry-utils/TODO
-  /usr/share/gchemutils/0.10/elecprops.xml
-  /usr/share/gchemutils/0.10/elements.xml
-  /usr/share/gchemutils/0.10/glade/crystal/atoms.glade
-  /usr/share/gchemutils/0.10/glade/crystal/bonds.glade
-  /usr/share/gchemutils/0.10/glade/crystal/cell.glade
-  /usr/share/gchemutils/0.10/glade/crystal/cleavages.glade
-  /usr/share/gchemutils/0.10/glade/crystal/docprop.glade
-  /usr/share/gchemutils/0.10/glade/crystal/lines.glade
-  /usr/share/gchemutils/0.10/glade/crystal/prefs.glade
-  /usr/share/gchemutils/0.10/glade/crystal/size.glade
-  /usr/share/gchemutils/0.10/glade/crystal/view-settings.glade
-  /usr/share/gchemutils/0.10/glade/gchemcalc.glade
-  /usr/share/gchemutils/0.10/glade/gtkperiodic.glade
-  /usr/share/gchemutils/0.10/glade/image-resolution.glade
-  /usr/share/gchemutils/0.10/glade/image-size.glade
-  /usr/share/gchemutils/0.10/glade/paint/H-pos.glade
-  /usr/share/gchemutils/0.10/glade/paint/arrow-object.glade
-  /usr/share/gchemutils/0.10/glade/paint/arrow.png
-  /usr/share/gchemutils/0.10/glade/paint/docprop.glade
-  /usr/share/gchemutils/0.10/glade/paint/newfiledlg.glade
-  /usr/share/gchemutils/0.10/glade/paint/plugins/arrows/arrowtool.glade
-  /usr/share/gchemutils/0.10/glade/paint/plugins/bonds/bond.glade
-  /usr/share/gchemutils/0.10/glade/paint/plugins/bonds/chain.glade
-  /usr/share/gchemutils/0.10/glade/paint/plugins/cycles/cycle.glade
-  /usr/share/gchemutils/0.10/glade/paint/plugins/cycles/cyclen.glade
-  /usr/share/gchemutils/0.10/glade/paint/plugins/residues/residues.glade
-  /usr/share/gchemutils/0.10/glade/paint/plugins/selection/group.glade
-  /usr/share/gchemutils/0.10/glade/paint/plugins/templates/new-template.glade
-  /usr/share/gchemutils/0.10/glade/paint/plugins/templates/templates.glade
-  /usr/share/gchemutils/0.10/glade/paint/plugins/text/fontsel.glade
-  /usr/share/gchemutils/0.10/glade/paint/preferences.glade
-  /usr/share/gchemutils/0.10/glade/paint/stringdlg.glade
-  /usr/share/gchemutils/0.10/glade/paint/tools.glade
-  /usr/share/gchemutils/0.10/glade/paint/zoom.glade
-  /usr/share/gchemutils/0.10/glade/print-setup.glade
-  /usr/share/gchemutils/0.10/glade/table/acidity.glade
-  /usr/share/gchemutils/0.10/glade/table/block.glade
-  /usr/share/gchemutils/0.10/glade/table/curve.glade
-  /usr/share/gchemutils/0.10/glade/table/eltpage.glade
-  /usr/share/gchemutils/0.10/glade/table/family.glade
-  /usr/share/gchemutils/0.10/glade/table/state-thermometer.glade
-  /usr/share/gchemutils/0.10/isotopes.xml
-  /usr/share/gchemutils/0.10/paint/templates/haworth.xml
-  /usr/share/gchemutils/0.10/paint/templates/templates.xml
-  /usr/share/gchemutils/0.10/paint/themes/ACS_Document_1996
-  /usr/share/gchemutils/0.10/paint/themes/Wikipedia
-  /usr/share/gchemutils/0.10/pixmaps/gchempaint_logo.png
-  /usr/share/gchemutils/0.10/pixmaps/gcrystal_logo.png
-  /usr/share/gchemutils/0.10/radii.xml
-  /usr/share/gchemutils/0.10/residues.xml
-  /usr/share/gnome/help/gchem3d-0.10/C/figures/ball-and-stick.png
-  /usr/share/gnome/help/gchem3d-0.10/C/figures/cylinders.png
-  /usr/share/gnome/help/gchem3d-0.10/C/figures/main-window.png
-  /usr/share/gnome/help/gchem3d-0.10/C/figures/page-setup.png
-  /usr/share/gnome/help/gchem3d-0.10/C/figures/print-scale.png
-  /usr/share/gnome/help/gchem3d-0.10/C/figures/spacefill.png
-  /usr/share/gnome/help/gchem3d-0.10/C/figures/wireframe.png
-  /usr/share/gnome/help/gchem3d-0.10/C/gchem3d-0.10.xml
-  /usr/share/gnome/help/gchem3d-0.10/C/legal.xml
-  /usr/share/gnome/help/gchemcalc-0.10/C/figures/braces.png
-  /usr/share/gnome/help/gchemcalc-0.10/C/figures/composition.png
-  /usr/share/gnome/help/gchemcalc-0.10/C/figures/formula.png
-  /usr/share/gnome/help/gchemcalc-0.10/C/figures/page-setup.png
-  /usr/share/gnome/help/gchemcalc-0.10/C/figures/pattern.png
-  /usr/share/gnome/help/gchemcalc-0.10/C/figures/print-scale.png
-  /usr/share/gnome/help/gchemcalc-0.10/C/figures/start.png
-  /usr/share/gnome/help/gchemcalc-0.10/C/gchemcalc-0.10.xml
-  /usr/share/gnome/help/gchemcalc-0.10/C/legal.xml
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/Hposdlg.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/arrow-heads.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/arrow-object-dlg.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/arrow-object1.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/arrow-object2.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/arrow-object3.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/arrow-opts.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/arrows.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/bond-opts.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/bond.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/chain-opt.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/chain.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/charges.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/choose-elt.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/cycle-opt.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/cyclentool-opt.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/cyclentool.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/cycletools.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/delocalized-bond.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/electrons.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/element.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/elt-menu.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/eraser.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/fragment.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/ghemical1.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/ghemical2.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/ghemical3.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/group.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/main-window.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/mechanism-arrows.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/mendeleiev.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/merge.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/merge1.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/merge2.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/merge3.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/mesomery-arrow.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/mesomery1.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/mesomery2.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/mesomery3.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/mol-menu.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/new-template.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/newfile.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/page-setup.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/phenyl-residue.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/phenyl-structure.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/plus.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/preferences.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/prefs-arrows.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/prefs-atoms-font.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/prefs-atoms-other.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/prefs-bonds.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/prefs-text.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/print-scale.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/properties.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/reaction-arrows.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/reaction1.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/reaction2.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/reaction3.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/reaction4.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/reaction5.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/residues.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/retrosynthesis.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/retrosynthesis1.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/retrosynthesis2.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/retrosynthesis3.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/retrosynthesis4.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/rotate.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/selection.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/stereobonds.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/templates-tools.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/templates.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/text.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/texttools-bar.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/toolbox.png
-  /usr/share/gnome/help/gchempaint-0.10/C/figures/wikipedia.png
-  /usr/share/gnome/help/gchempaint-0.10/C/gchempaint-0.10.xml
-  /usr/share/gnome/help/gchempaint-0.10/C/legal.xml
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/add-plot.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/atomic-radii.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/blocs.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/choose-data.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/curve.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/elec.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/electronegativity.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/family.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/graph-guru.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/main.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/new-chart-guru.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/new-chart.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/page-setup.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/print-scale.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/radii.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/start.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/state.png
-  /usr/share/gnome/help/gchemtable-0.10/C/figures/thermo.png
-  /usr/share/gnome/help/gchemtable-0.10/C/gchemtable-0.10.xml
-  /usr/share/gnome/help/gchemtable-0.10/C/legal.xml
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/atoms-dlg.png
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/cleavages-dlg.png
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/default-view.png
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/lattice-dlg.png
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/lines-dlg.png
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/main-window.png
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/page-setup.png
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/print-res.png
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/print-scale.png
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/size-dlg.png
-  /usr/share/gnome/help/gcrystal-0.10/C/figures/view-settings.png
-  /usr/share/gnome/help/gcrystal-0.10/C/gcrystal-0.10.xml
-  /usr/share/gnome/help/gcrystal-0.10/C/legal.xml
-  /usr/share/gnome/help/gspectrum-0.10/C/figures/gspectrum.png
-  /usr/share/gnome/help/gspectrum-0.10/C/figures/ir-tools.png
-  /usr/share/gnome/help/gspectrum-0.10/C/figures/nmr-tools.png
-  /usr/share/gnome/help/gspectrum-0.10/C/figures/page-setup.png
-  /usr/share/gnome/help/gspectrum-0.10/C/figures/print-scale.png
-  /usr/share/gnome/help/gspectrum-0.10/C/figures/simple-toolbar.png
-  /usr/share/gnome/help/gspectrum-0.10/C/figures/uv-vis-tools.png
-  /usr/share/gnome/help/gspectrum-0.10/C/gspectrum-0.10.xml
-  /usr/share/gnome/help/gspectrum-0.10/C/legal.xml
-  /usr/share/icons/hicolor/128x128/apps/gchem3d.png
-  /usr/share/icons/hicolor/128x128/apps/gchemcalc.png
-  /usr/share/icons/hicolor/128x128/apps/gchempaint.png
-  /usr/share/icons/hicolor/128x128/apps/gchemtable.png
-  /usr/share/icons/hicolor/128x128/apps/gcrystal.png
-  /usr/share/icons/hicolor/128x128/apps/gspectrum.png
-  /usr/share/icons/hicolor/128x128/mimetypes/gnome-mime-application-x-gchempaint.png
-  /usr/share/icons/hicolor/128x128/mimetypes/gnome-mime-application-x-gcrystal.png
-  /usr/share/icons/hicolor/32x32/apps/gchem3d.png
-  /usr/share/icons/hicolor/32x32/apps/gchemcalc.png
-  /usr/share/icons/hicolor/32x32/apps/gchempaint.png
-  /usr/share/icons/hicolor/32x32/apps/gchemtable.png
-  /usr/share/icons/hicolor/32x32/apps/gcrystal.png
-  /usr/share/icons/hicolor/32x32/apps/gspectrum.png
-  /usr/share/icons/hicolor/32x32/mimetypes/gnome-mime-application-x-gchempaint.png
-  /usr/share/icons/hicolor/32x32/mimetypes/gnome-mime-application-x-gcrystal.png
-  /usr/share/icons/hicolor/48x48/apps/gchem3d.png
-  /usr/share/icons/hicolor/48x48/apps/gchemcalc.png
-  /usr/share/icons/hicolor/48x48/apps/gchempaint.png
-  /usr/share/icons/hicolor/48x48/apps/gchemtable.png
-  /usr/share/icons/hicolor/48x48/apps/gcrystal.png
-  /usr/share/icons/hicolor/48x48/apps/gspectrum.png
-  /usr/share/icons/hicolor/48x48/mimetypes/gnome-mime-application-x-gchempaint.png
-  /usr/share/icons/hicolor/48x48/mimetypes/gnome-mime-application-x-gcrystal.png
-  /usr/share/icons/hicolor/72x72/apps/gchem3d.png
-  /usr/share/icons/hicolor/72x72/apps/gchemcalc.png
-  /usr/share/icons/hicolor/72x72/apps/gchempaint.png
-  /usr/share/icons/hicolor/72x72/apps/gchemtable.png
-  /usr/share/icons/hicolor/72x72/apps/gcrystal.png
-  /usr/share/icons/hicolor/72x72/apps/gspectrum.png
-  /usr/share/icons/hicolor/72x72/mimetypes/gnome-mime-application-x-gchempaint.png
-  /usr/share/icons/hicolor/72x72/mimetypes/gnome-mime-application-x-gcrystal.png
-  /usr/share/locale/de/LC_MESSAGES/gchemutils-0.10.mo
-  /usr/share/locale/es/LC_MESSAGES/gchemutils-0.10.mo
-  /usr/share/locale/fr/LC_MESSAGES/gchemutils-0.10.mo
-  /usr/share/locale/it/LC_MESSAGES/gchemutils-0.10.mo
-  /usr/share/locale/pl/LC_MESSAGES/gchemutils-0.10.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/gchemutils-0.10.mo
-  /usr/share/locale/ru/LC_MESSAGES/gchemutils-0.10.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/gchemutils-0.10.mo
-  /usr/share/man/man1/gchem3d.1.gz
-  /usr/share/man/man1/gchemcalc.1.gz
-  /usr/share/man/man1/gchempaint.1.gz
-  /usr/share/man/man1/gchemtable.1.gz
-  /usr/share/man/man1/gcrystal.1.gz
-  /usr/share/man/man1/gspectrum.1.gz
-  /usr/share/mime/packages/gchemutils.xml
-  /usr/share/mimelnk/application/x-gchempaint.desktop
-  /usr/share/mimelnk/application/x-gcrystal.desktop
-  /usr/share/omf/gchem3d-0.10/gchem3d-0.10-C.omf
-  /usr/share/omf/gchemcalc-0.10/gchemcalc-0.10-C.omf
-  /usr/share/omf/gchempaint-0.10/gchempaint-0.10-C.omf
-  /usr/share/omf/gchemtable-0.10/gchemtable-0.10-C.omf
-  /usr/share/omf/gcrystal-0.10/gcrystal-0.10-C.omf
-  /usr/share/omf/gspectrum-0.10/gspectrum-0.10-C.omf
-
-------------------
-
 Port Notes:
+
+----- version 0.10.8-1 -----
+Version bump.
 
 ----- version 0.10.4-1 -----
 Initial release for Cygwin 1.7.
