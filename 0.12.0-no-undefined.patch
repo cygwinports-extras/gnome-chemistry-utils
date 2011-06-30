@@ -42,6 +42,17 @@
  libgcu_@GCU_API_VER@_la_LIBADD = \
  		$(goffice_LIBS) \
  		$(openbabel_LIBS) \
+--- origsrc/gnome-chemistry-utils-0.12.8/mozilla-plugin/Makefile.am	2011-05-08 02:27:39.000000000 -0500
++++ src/gnome-chemistry-utils-0.12.8/mozilla-plugin/Makefile.am	2011-06-29 17:18:30.160131800 -0500
+@@ -14,7 +14,7 @@ DEFS += -DLIBEXECDIR=\"$(libexecdir)\" -
+ 
+ libmozgcu_la_SOURCES = moz-plugin.c
+ libmozgcu_la_CPPFLAGS = $(MOZILLA_CFLAGS)
+-libmozgcu_la_LDFLAGS = -module -avoid-version 
++libmozgcu_la_LDFLAGS = -module -avoid-version -no-undefined
+ libmozgcu_la_LIBADD = $(MOZILLA_LIBS)
+ 
+ chem_viewer_SOURCES = chem-viewer.cc
 --- origsrc/gnome-chemistry-utils-0.12.0/plugins/paint/arrows/Makefile.am	2010-05-12 06:04:11.000000000 -0500
 +++ src/gnome-chemistry-utils-0.12.0/plugins/paint/arrows/Makefile.am	2010-05-17 00:36:32.592456900 -0500
 @@ -37,7 +37,7 @@ VARIABLES = \
