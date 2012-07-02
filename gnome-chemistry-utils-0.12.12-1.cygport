@@ -9,3 +9,5 @@ PATCH_URI="
 "
 
 CYGCONF_ARGS="--libexecdir=/usr/lib/gchemutils --with-mozilla-libdir=/usr/lib/mozilla --disable-update-databases"
+
+KEEP_LA_FILES="none"
