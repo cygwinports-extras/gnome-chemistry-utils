@@ -1,0 +1,165 @@
+--- origsrc/gnome-chemistry-utils-0.14.0/gnumeric/Makefile.am	2012-12-31 23:10:10.399809400 -0600
++++ src/gnome-chemistry-utils-0.14.0/gnumeric/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -14,7 +14,7 @@ DEFS += -DDATADIR=\"$(datadir)\" -DGNM_V
+ 
+ gchemutils_plugindir = $(GNUMERIC_PLUGINS_DIR)/gchemutils
+ gchemutils_plugin_LTLIBRARIES = plugin.la 
+-plugin_la_LDFLAGS = -module -avoid-version
++plugin_la_LDFLAGS = -module -avoid-version -no-undefined
+ plugin_la_SOURCES =	\
+ 	functions.cc
+ plugin_la_LIBADD = \
+--- origsrc/gnome-chemistry-utils-0.14.0/libs/gccv/Makefile.am	2012-12-31 23:10:10.409809400 -0600
++++ src/gnome-chemistry-utils-0.14.0/libs/gccv/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -52,7 +52,7 @@ libgccv_@GCU_API_VER@_la_SOURCES =	\
+ 	wedge.cc
+ 
+ libgccv_@GCU_API_VER@_la_LDFLAGS = \
+-		-version-info  @GCU_VERSION_INFO@
++		-version-info  @GCU_VERSION_INFO@ -no-undefined
+ libgccv_@GCU_API_VER@_la_LIBADD = \
+ 		$(cairo_LIBS) \
+ 		$(gtk_LIBS) \
+--- origsrc/gnome-chemistry-utils-0.14.0/libs/gcp/Makefile.am	2012-12-31 23:10:10.409809400 -0600
++++ src/gnome-chemistry-utils-0.14.0/libs/gcp/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -114,7 +114,7 @@ noinst_HEADERS = \
+ 		Hposdlg.h
+ 		
+ libgcp_@GCU_API_VER@_la_LDFLAGS = \
+-		-version-info  @GCU_VERSION_INFO@
++		-version-info  @GCU_VERSION_INFO@ -no-undefined
+ libgcp_@GCU_API_VER@_la_LIBADD = \
+ 		$(gtk_LIBS) $(gsf_LIBS) $(goffice_LIBS) -ldl \
+ 		$(top_builddir)/libs/gcugtk/libgcugtk-@GCU_API_VER@.la \
+--- origsrc/gnome-chemistry-utils-0.14.0/libs/gcr/Makefile.am	2012-12-15 15:43:53.000000000 -0600
++++ src/gnome-chemistry-utils-0.14.0/libs/gcr/Makefile.am	2012-12-31 22:23:45.322469700 -0600
+@@ -44,7 +44,7 @@ libgcrystal_@GCU_API_VER@_la_SOURCES =	\
+ 	window.cc
+ 
+ libgcrystal_@GCU_API_VER@_la_LDFLAGS = \
+-		-version-info  @GCU_VERSION_INFO@
++		-version-info  @GCU_VERSION_INFO@ -no-undefined
+ libgcrystal_@GCU_API_VER@_la_LIBADD = \
+ 		$(top_builddir)/libs/gcugtk/libgcugtk-@GCU_API_VER@.la \
+ 		$(top_builddir)/libs/gcu/libgcu-@GCU_API_VER@.la \
+--- origsrc/gnome-chemistry-utils-0.14.0/libs/gcu/Makefile.am	2012-12-31 23:10:10.409809400 -0600
++++ src/gnome-chemistry-utils-0.14.0/libs/gcu/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -5,7 +5,7 @@ INCLUDES = \
+ 		$(goffice_CFLAGS) \
+ 		$(GCU_CFLAGS)
+ libgcu_@GCU_API_VER@_la_LDFLAGS = \
+-		-version-info  @GCU_VERSION_INFO@
++		-version-info  @GCU_VERSION_INFO@ -no-undefined
+ libgcu_@GCU_API_VER@_la_LIBADD = \
+ 		$(goffice_LIBS) \
+ 		$(gsf_LIBS) \
+--- origsrc/gnome-chemistry-utils-0.14.0/libs/gcugtk/Makefile.am	2012-12-15 15:43:52.000000000 -0600
++++ src/gnome-chemistry-utils-0.14.0/libs/gcugtk/Makefile.am	2012-12-31 22:23:54.652482600 -0600
+@@ -5,7 +5,7 @@ INCLUDES = \
+ 		$(goffice_CFLAGS) \
+ 		$(GCU_CFLAGS)
+ libgcugtk_@GCU_API_VER@_la_LDFLAGS = \
+-		-version-info  @GCU_VERSION_INFO@
++		-version-info  @GCU_VERSION_INFO@ -no-undefined
+ libgcugtk_@GCU_API_VER@_la_LIBADD = \
+ 		$(goffice_LIBS) \
+ 		$(gsf_LIBS) \
+--- origsrc/gnome-chemistry-utils-0.14.0/mozilla-plugin/Makefile.am	2012-12-31 23:10:10.419809400 -0600
++++ src/gnome-chemistry-utils-0.14.0/mozilla-plugin/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -14,7 +14,7 @@ DEFS += -DLIBEXECDIR=\"$(libexecdir)\" -
+ 
+ libmozgcu_la_SOURCES = moz-plugin.c
+ libmozgcu_la_CPPFLAGS = $(MOZILLA_CFLAGS)
+-libmozgcu_la_LDFLAGS = -module -avoid-version 
++libmozgcu_la_LDFLAGS = -module -avoid-version -no-undefined
+ libmozgcu_la_LIBADD = $(MOZILLA_LIBS)
+ 
+ chem_viewer_SOURCES = chem-viewer.cc
+--- origsrc/gnome-chemistry-utils-0.14.0/plugins/paint/arrows/Makefile.am	2012-12-31 23:10:10.419809400 -0600
++++ src/gnome-chemistry-utils-0.14.0/plugins/paint/arrows/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -36,7 +36,7 @@ VARIABLES = \
+ arrowsdir = $(libdir)/gchemutils/@GCU_API_VER@/plugins/paint
+ arrows_LTLIBRARIES = arrows.la
+ 
+-arrows_la_LDFLAGS = -module -avoid-version
++arrows_la_LDFLAGS = -module -avoid-version -no-undefined
+ arrows_la_LIBADD = \
+ 		$(gtk_LIBS) $(goffice_LIBS) $(xml_LIBS) \
+ 		$(top_builddir)/libs/gccv/libgccv-@GCU_API_VER@.la \
+--- origsrc/gnome-chemistry-utils-0.14.0/plugins/paint/atoms/Makefile.am	2012-12-31 23:10:10.419809400 -0600
++++ src/gnome-chemistry-utils-0.14.0/plugins/paint/atoms/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -34,7 +34,7 @@ VARIABLES = \
+ atomsdir = $(libdir)/gchemutils/@GCU_API_VER@/plugins/paint
+ atoms_LTLIBRARIES = atoms.la
+ 
+-atoms_la_LDFLAGS = -module -avoid-version
++atoms_la_LDFLAGS = -module -avoid-version -no-undefined
+ atoms_la_LIBADD = \
+ 		$(gtk_LIBS) $(xml_LIBS) \
+ 		$(top_builddir)/libs/gccv/libgccv-@GCU_API_VER@.la \
+--- origsrc/gnome-chemistry-utils-0.14.0/plugins/paint/bonds/Makefile.am	2012-12-31 23:10:10.419809400 -0600
++++ src/gnome-chemistry-utils-0.14.0/plugins/paint/bonds/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -34,7 +34,7 @@ VARIABLES = \
+ bondsdir = $(libdir)/gchemutils/@GCU_API_VER@/plugins/paint
+ bonds_LTLIBRARIES = bonds.la
+ 
+-bonds_la_LDFLAGS = -module -avoid-version
++bonds_la_LDFLAGS = -module -avoid-version -no-undefined
+ bonds_la_LIBADD = \
+ 		$(gtk_LIBS) $(goffice_LIBS) \
+ 		$(top_builddir)/libs/gccv/libgccv-@GCU_API_VER@.la \
+--- origsrc/gnome-chemistry-utils-0.14.0/plugins/paint/cycles/Makefile.am	2012-12-31 23:10:10.429809500 -0600
++++ src/gnome-chemistry-utils-0.14.0/plugins/paint/cycles/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -36,7 +36,7 @@ VARIABLES = \
+ cyclesdir = $(libdir)/gchemutils/@GCU_API_VER@/plugins/paint
+ cycles_LTLIBRARIES = cycles.la
+ 
+-cycles_la_LDFLAGS = -module -avoid-version
++cycles_la_LDFLAGS = -module -avoid-version -no-undefined
+ cycles_la_LIBADD = \
+ 		$(gtk_LIBS) \
+ 		$(top_builddir)/libs/gccv/libgccv-@GCU_API_VER@.la \
+--- origsrc/gnome-chemistry-utils-0.14.0/plugins/paint/residues/Makefile.am	2012-12-31 23:10:10.429809500 -0600
++++ src/gnome-chemistry-utils-0.14.0/plugins/paint/residues/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -13,7 +13,7 @@ DEFS += -DDATADIR=\"$(datadir)\" \
+ residuesdir = $(libdir)/gchemutils/@GCU_API_VER@/plugins/paint
+ residues_LTLIBRARIES = residues.la
+ 
+-residues_la_LDFLAGS = -module -avoid-version
++residues_la_LDFLAGS = -module -avoid-version -no-undefined
+ residues_la_LIBADD = \
+ 		$(gtk_LIBS) $(xml_LIBS) \
+ 		$(top_builddir)/libs/gccv/libgccv-@GCU_API_VER@.la \
+--- origsrc/gnome-chemistry-utils-0.14.0/plugins/paint/selection/Makefile.am	2012-12-31 23:10:10.429809500 -0600
++++ src/gnome-chemistry-utils-0.14.0/plugins/paint/selection/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -38,7 +38,7 @@ VARIABLES = \
+ selectiondir = $(libdir)/gchemutils/@GCU_API_VER@/plugins/paint
+ selection_LTLIBRARIES = selection.la
+ 
+-selection_la_LDFLAGS = -module -avoid-version
++selection_la_LDFLAGS = -module -avoid-version -no-undefined
+ selection_la_LIBADD = \
+ 		$(gtk_LIBS) $(xml_LIBS) \
+ 		$(top_builddir)/libs/gccv/libgccv-@GCU_API_VER@.la \
+--- origsrc/gnome-chemistry-utils-0.14.0/plugins/paint/templates/Makefile.am	2012-12-31 23:10:10.439809500 -0600
++++ src/gnome-chemistry-utils-0.14.0/plugins/paint/templates/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -13,7 +13,7 @@ DEFS += -DDATADIR=\"$(datadir)\" \
+ templatesdir = $(libdir)/gchemutils/@GCU_API_VER@/plugins/paint
+ templates_LTLIBRARIES = templates.la
+ 
+-templates_la_LDFLAGS = -module -avoid-version
++templates_la_LDFLAGS = -module -avoid-version -no-undefined
+ templates_la_LIBADD = \
+ 		$(gtk_LIBS) $(xml_LIBS) \
+ 		$(top_builddir)/libs/gccv/libgccv-@GCU_API_VER@.la \
+--- origsrc/gnome-chemistry-utils-0.14.0/plugins/paint/text/Makefile.am	2012-12-31 23:10:10.439809500 -0600
++++ src/gnome-chemistry-utils-0.14.0/plugins/paint/text/Makefile.am	2012-12-31 22:14:23.000000000 -0600
+@@ -26,7 +26,7 @@ VARIABLES = \
+ textdir = $(libdir)/gchemutils/@GCU_API_VER@/plugins/paint
+ text_LTLIBRARIES = text.la
+ 
+-text_la_LDFLAGS = -module -avoid-version
++text_la_LDFLAGS = -module -avoid-version -no-undefined
+ text_la_LIBADD = \
+ 		$(gtk_LIBS) $(goffice_LIBS) $(xml_LIBS) \
+ 		$(top_builddir)/libs/gccv/libgccv-@GCU_API_VER@.la \

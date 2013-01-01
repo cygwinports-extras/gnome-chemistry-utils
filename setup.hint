@@ -1,5 +1,0 @@
-category: Gnome Science
-requires: GConf2 bodr chemistry-mime-data libcairo2 libgcc1 libgdk_pixbuf2.0_0 libGL1 libglib2.0_0 libgoffice0.8_8 libgsf1_114 libgtk2.0_0 libgtkglext1.0_0 libintl8 libopenbabel4 libpango1.0_0 libstdc++6 libX11_6 libxml2
-sdesc: "GNOME Chemistry Utilities"
-ldesc: "The Gnome Chemistry Utils provide some utilities and a library
-containing Gtk widgets and some C++ classes related to chemistry."

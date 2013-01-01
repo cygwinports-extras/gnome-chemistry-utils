@@ -1,0 +1,11 @@
+--- origsrc/gnome-chemistry-utils-0.14.0/openbabel/babelserv.cc	2012-12-15 15:43:51.000000000 -0600
++++ src/gnome-chemistry-utils-0.14.0/openbabel/babelserv.cc	2012-12-31 22:59:10.308281900 -0600
+@@ -98,7 +98,7 @@ int main (int argc, char *argv[])
+ 	fds[0].revents = 0;
+ 	std::set <int> deleted;
+ 	static struct sockaddr_in fromend;
+-	static unsigned lng_address;
++	static socklen_t lng_address;
+ 	int service_socket;
+ 
+ 	while (time (NULL) < endtime) {
