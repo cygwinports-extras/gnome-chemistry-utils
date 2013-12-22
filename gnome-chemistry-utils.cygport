@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-chemistry-utils"
-VERSION=0.14.3
+VERSION=0.14.4
 RELEASE=1
 CATEGORY="Science"
 SUMMARY="GNOME Chemistry Utilities"
