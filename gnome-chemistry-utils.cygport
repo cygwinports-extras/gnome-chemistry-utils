@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-chemistry-utils"
-VERSION=0.14.7
+VERSION=0.14.10
 RELEASE=1
 CATEGORY="Science"
 SUMMARY="GNOME Chemistry Utilities"
@@ -14,7 +14,6 @@ PATCH_URI="
 	0.14.0-no-undefined.patch
 	0.10.3-apidoc-install.patch
 	0.14.0-socklen_t.patch
-	0.14.3-Winherit-decls.patch
 "
 
 PKG_NAMES="${NAME} gnumeric-gchemutils"
